@@ -21,4 +21,4 @@ TODO: Larger projects often have sections on contributing to their project, in w
 TODO: Include a section for credits in order to highlight and link to the authors of your project.
 
 ## License
-TODO: Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s licensing guide!
+UniDi contributions are licensed under the Apache 2.0 license, except for contributions copied from Extenject. See [LICENSE](https://github.com/Unreliant/UniDi/blob/master/LICENSE) for details.
