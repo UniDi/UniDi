@@ -1,7 +1,14 @@
-Copyright UniDi contributors. All rights reserved.
+Copyright: UniDi contributors. All rights reserved.
+Version 1, 12 April 2021
 
-UniDi is licensed under the terms of the Apache 2.0 license, except for
-parts of Zenject/Extenject that were contributed under the Zenject license (see below).
+UniDi is licensed under the terms of the Apache 2.0 license,
+except for parts of 
+- 'Zenject' that were contributed under the Zenject license (see below).
+- 'Extenject' that were contributed under the Extenject license (see below).
+- 'Lightweight IoC Container for Unity3D' that were contributed under the 
+  Lightweight IoC Container for Unity3D license (see below).
+
+===
 
 UniDi's license follows:
 
@@ -23,7 +30,7 @@ UniDi's license follows:
       "Legal Entity" shall mean the union of the acting entity and all
       other entities that control, are controlled by, or are under common
       control with that entity. For the purposes of this definition,
-      "control" means (i) the power, direct or indirect, to cause the
+      "control" means (i) the power, dirct or indirect, to cause the
       direction or management of such entity, whether by contract or
       otherwise, or (ii) ownership of fifty percent (50%) or more of the
       outstanding shares, or (iii) beneficial ownership of such entity.
@@ -187,8 +194,10 @@ UniDi's license follows:
 
 The externally maintained libraries used by UniDi are:
 
-  - NSubstitute: Substitute for .NET mocking libraries. Copyright Anthony Egerton and David Tchepak. BSD license.
-  - Moq: Mocking framework for .NET. Copyright (c) Daniel Cazzulino and Contributors. MIT license.
+  - NSubstitute: Substitute for .NET mocking libraries. 
+    Copyright Anthony Egerton and David Tchepak. BSD license.
+  - Moq: Mocking framework for .NET. 
+    Copyright (c) Daniel Cazzulino and Contributors. MIT license.
 
 ===
 
@@ -202,7 +211,8 @@ The Zenject license follows:
 
 The MIT License (MIT)
 
-Copyright (c) 2010-2021 Modest Tree Media Inc. ZENJECT and EXTENJECT are a trademark of Modest Tree Media Inc.  http://www.modesttree.com
+Copyright (c) 2010-2021 Modest Tree Media Inc. ZENJECT and EXTENJECT are a 
+trademark of Modest Tree Media Inc.  http://www.modesttree.com
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -225,8 +235,9 @@ SOFTWARE.
 
 ===
 
-Any parts of UniDi that were contributed under the 'Lightweight IoC Container for Unity3D' license 
-are licensed under the 'Lightweight IoC Container for Unity3D' license unless the copyright holder 
+Any parts of UniDi that were contributed under the 
+'Lightweight IoC Container for Unity3D' license are licensed under the 
+'Lightweight IoC Container for Unity3D' license unless the copyright holder 
 gave permission to license those contributions under the MIT license.
 
 The 'Lightweight IoC Container for Unity3D' license follows:
@@ -235,6 +246,8 @@ The 'Lightweight IoC Container for Unity3D' license follows:
 
 Copyright 2012 Sebastiano Mandalà
 
-Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. 
+You may obtain a copy of the License at
 
    http://www.apache.org/licenses/LICENSE-2.0
