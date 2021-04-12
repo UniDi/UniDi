@@ -1,0 +1,123 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - 'Documentation'
+      - '*.md'
+  pull_request: {}
+
+jobs:
+
+  buildAndTestForSupportedPlatforms:
+    name: Build for ${{ matrix.targetPlatform }} on version ${{ matrix.unityVersion }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+          # projectPath:
+          # - test-project
+        unityVersion:
+          - 2019.4.1f1
+          - 2020.2.1f1
+          - 2021.1.1f1
+        targetPlatform:
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - StandaloneLinux64 # Build a Linux 64-bit standalone.
+          - iOS # Build an iOS player.
+          - Android # Build an Android player.
+          - WebGL # WebGL.
+
+    steps:
+
+      # Checkout branches
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          lfs: true
+
+      # cache
+      - uses: actions/cache@v2
+        with:
+          path: ${{ matrix.projectPath }}/Library
+          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
+          restore-keys: |
+            Library-${{ matrix.projectPath }}-
+            Library-
+
+      # Run Tests
+      - uses: game-ci/unity-test-runner@v2
+        id: testRunner
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: ${{ matrix.unityVersion }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Test results (all modes)
+          path: ${{ steps.testRunner.outputs.artifactsPath }}
+
+      # Unity Build
+      - uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: ${{ matrix.unityVersion }}
+          targetPlatform: ${{ matrix.targetPlatform }}
+          customParameters: '-myParameter myValue -myBoolean -ThirdParameter andItsValue'
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Build
+          path: build
+
+UniDi-usage:
+    runs-on: [windows-latest]
+    name: UniDi-usage
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: setup-msbuild
+        uses: microsoft/setup-msbuild@v1
+        
+      - name: MSBuild
+        working-directory: AssemblyBuild\UniDi-usage
+        run: msbuild UniDi-usage.sln
+        
+      - name: Upload dll
+        uses: actions/upload-artifact@v1
+        with:
+          name: UniDi-usage
+          path: AssemblyBuild\UniDi-usage\bin\Debug\
+        
+  buildUnity:
+    name: Unity test
+    runs-on: ubuntu-latest
+    needs: UniDi-usage
+    env:
+      UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+    steps:
+  
+      # Checkout repository (required to test local actions)
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Download UniDi-usage
+        uses: actions/download-artifact@v1
+        with:
+          name: UniDi-usage
+
+      - name: Install UniDi-usage
+        run: |
+          ls -l UniDi-usage
+          cp UniDi-usage/UniDi-usage.dll UnityProject/Assets/Plugins/UniDi/Source/Usage
+          ls -l UnityProject/Assets/Plugins/UniDi/Source/Usage
