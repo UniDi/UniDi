@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+<details>
+<summary>Details</summary>
+
+- [UniDi](#unidi)
+  - [Table Of Contents](#table-of-contents)
+  - [What is a DI container?](#what-is-a-di-container)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Credits](#credits)
+  - [License](#license)
+
+</details>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # UniDi
 UniDi is a Dependency Injection container for Unity based on Zenject.
 
