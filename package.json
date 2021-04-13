@@ -1,0 +1,22 @@
+{
+   "name": "com.unidi.unidi",
+   "version": "0.1.0-preview.1",
+   "displayName": "UniDi",
+   "description": "UniDi is dependency injection container for Unity. It manages the dependencies between objects so that your games remains easy to change as they grow in size and complexity.\n\n UniDi uses the same set of binding instructions as Zenject/Extenject which makes the switch easier to do.",
+   "unity": "2019.1",
+   "unityRelease": "1f1",
+   "dependencies": {
+   },
+   "keywords": [
+        "Dependency Injection",
+        "DI",
+        "IoC",
+        "Zenject",
+        "Extenject"
+    ],
+    "author": {
+        "name": "UniDi Community",
+        "email": "mathijs.unityassets.gmail.com",
+        "url": "https://www.github.com/UniDi"
+    }
+}

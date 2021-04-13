@@ -1,0 +1,8 @@
+{
+    "name": "UniDi.UniDi.Tests",
+    "references": [
+        "UniDi.UniDi"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

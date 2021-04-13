@@ -1,0 +1,11 @@
+{
+    "name": "UniDi.UniDi.Tests.Editor",
+    "references": [
+        "UniDi.UniDi",
+        "UniDi.UniDi.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
