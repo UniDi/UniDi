@@ -1,0 +1,24 @@
+name: Hyperlink Validator 
+
+on: 
+  push:
+    paths:
+      - 'Documentation/**'
+      - '*.md'
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Link Checker
+      id: lc
+      uses: peter-evans/link-checker@v1
+      with:
+        args: -v --exclude "https://forum.unity.com" --recursive *
+    - name: Create Issue From File
+      uses: peter-evans/create-issue-from-file@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        title: Link Checker Report
+        content-filepath: ./link-checker/out.md
+        labels: report, automated issue
