@@ -1,0 +1,10 @@
+{
+    "name": "UniDi-Editor",
+    "references": [
+        "UniDi"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UniDi.Internal;
+
+namespace UniDi
+{
+    [NoReflectionBaking]
+    public class SubContainerCreatorByInstaller : ISubContainerCreator
+    {
+        readonly Type _installerType;
+        readonly DiContainer _container;
+        readonly List<TypeValuePair> _extraArgs;
+        readonly SubContainerCreatorBindInfo _containerBindInfo;
+
+        public SubContainerCreatorByInstaller(
+            DiContainer container,
+            SubContainerCreatorBindInfo containerBindInfo,
+            Type installerType,
+            IEnumerable<TypeValuePair> extraArgs)
+        {
+            _installerType = installerType;
+            _container = container;
+            _extraArgs = extraArgs.ToList();
+            _containerBindInfo = containerBindInfo;
+
+            Assert.That(installerType.DerivesFrom<InstallerBase>(),
+                "Invalid installer type given during bind command.  Expected type '{0}' to derive from 'Installer<>'", installerType);
+        }
+
+        public SubContainerCreatorByInstaller(
+            DiContainer container,
+            SubContainerCreatorBindInfo containerBindInfo,
+            Type installerType)
+            : this(container, containerBindInfo, installerType, new List<TypeValuePair>())
+        {
+        }
+
+        public DiContainer CreateSubContainer(List<TypeValuePair> args, InjectContext context, out Action injectAction)
+        {
+            var subContainer = _container.CreateSubContainer();
+
+            SubContainerCreatorUtil.ApplyBindSettings(_containerBindInfo, subContainer);
+
+            var extraArgs = UniDiPools.SpawnList<TypeValuePair>();
+
+            extraArgs.AllocFreeAddRange(_extraArgs);
+            extraArgs.AllocFreeAddRange(args);
+
+            var installer = (InstallerBase)subContainer.InstantiateExplicit(
+                _installerType, extraArgs);
+
+            UniDiPools.DespawnList(extraArgs);
+
+            installer.InstallBindings();
+
+            injectAction = () => 
+            {
+                subContainer.ResolveRoots();
+            };
+
+            return subContainer;
+        }
+    }
+}
