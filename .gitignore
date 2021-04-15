@@ -63,6 +63,12 @@ sysinfo.txt
 crashlytics-build.properties
 
 # =========================
+# JetBrains (Rider)
+# =========================
+
+/.idea/
+
+# =========================
 # MacOS:
 # =========================
 
