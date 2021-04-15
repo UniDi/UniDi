@@ -63,9 +63,23 @@ sysinfo.txt
 crashlytics-build.properties
 
 # =========================
-# JetBrains (Rider)
+# VS(C):
 # =========================
 
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]in/
+[Oo]bj/
+[Tt]emp/
+
+# =========================
+# JetBrains:
+# =========================
+
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
 .idea/
 
 # =========================
