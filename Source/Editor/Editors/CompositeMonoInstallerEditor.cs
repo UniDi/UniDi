@@ -1,5 +1,4 @@
 using UnityEditor;
-using UniDi;
 
 namespace UniDi
 {
