@@ -7,17 +7,17 @@ UniDi is a Dependency Injection container for Unity based on Zenject.
 <details>
 <summary>Details</summary>
 
-    - [UniDi](#unidi)
-    - [Table Of Contents](#table-of-contents)
-    - [What is a DI container?](#what-is-a-di-container)
-    - [Installation](#installation)
-    - [Usage](#usage)
-    - [Contributing](#contributing)
-    - [Credits](#credits)
+- [What is a DI container?](#what-is-a-di-container)
+- [Installation](#installation)
+  - [Install from file](#install-from-file)
+  - [OpenUPM](#openupm)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Credits](#credits)
 - [License](#license)
 
-    </details>
-    <!-- END doctoc generated TOC please keep comment here to allow auto update -->
+</details>
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is a DI container?
 A DI Container is a software library that provides DI function- ality and automates many of the tasks involved in Object Composition, Interception, and Lifetime Management. It’s an engine that resolves and manages object graphs.
