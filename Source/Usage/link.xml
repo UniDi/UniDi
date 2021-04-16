@@ -1,0 +1,3 @@
+<linker>
+    <assembly fullname="UniDi-Usage" preserve="all"/>
+</linker>
