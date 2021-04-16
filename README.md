@@ -20,11 +20,11 @@ UniDi is a Dependency Injection container for Unity based on Zenject.
     <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is a DI container?
-A DI Container is a software library that provides DI function- ality and automates many of the tasks involved in Object Composition, Interception, and Lifetime Management. It’s an engine that resolves and manages object graphs.
+A DI Container is a software library that provides DI functionality and automates many of the tasks involved in Object Composition, Interception, and Lifetime Management. It’s an engine that resolves and manages object graphs.
 
 ## Installation
 
-###Install via Git URL
+### Install via Git URL
 Open ``Packages/manifest.json`` with your favorite text editor. Add the following line to the dependencies block.
 ```json
 {
@@ -48,7 +48,7 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
 }
 ```
 ### Install from file 
-Download a release package to your computer. Press 'Add package from disk' in the Unity Package Manager and select the ``package.json`` in the extracted folder.
+Download and extract a [release](https://github.com/UniDi/UniDi/releases) to your machine. Press 'Add package from disk' in the Unity Package Manager and select the ``package.json`` file in the extracted folder.
 
 ### OpenUPM
 TODO: --> WIP <--
