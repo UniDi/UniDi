@@ -9,6 +9,7 @@ UniDi is a Dependency Injection container for Unity based on Zenject.
 
 - [What is a DI container?](#what-is-a-di-container)
 - [Installation](#installation)
+  - [Install via Git URL](#install-via-git-url)
   - [Install from file](#install-from-file)
   - [OpenUPM](#openupm)
 - [Usage](#usage)
