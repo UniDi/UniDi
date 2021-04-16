@@ -1,9 +1,4 @@
 # =========================
-# VS(C):
-# =========================
-
-
-# =========================
 # UNITY
 # =========================
 
@@ -19,9 +14,6 @@
 /[Dd]ebug/
 /[Mm]emoryCaptures/
 /x64/
-
-# Let Unity create .meta files when imported into a project
-*.meta
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 # !/[Aa]ssets/**/*.meta
