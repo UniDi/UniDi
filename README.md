@@ -31,7 +31,8 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
 {
     "dependencies": {
         "com.unidi.unidi": "https://github.com/unidi/unidi.git",
-    }
+    },
+    "testables": "com.unidi.unidi"
 }
 ```
 **Notice:** Unity Package Manager records the current commit to a lock entry of the manifest.json. To update to the latest version, change the ``"hash"`` value manually or just remove the lock entry to resolve the package.
