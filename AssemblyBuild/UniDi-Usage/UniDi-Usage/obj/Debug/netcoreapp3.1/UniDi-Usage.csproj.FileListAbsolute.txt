@@ -7,3 +7,12 @@
 /Users/MateoPanadero/Desktop/UniDi-Usage/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.csproj.CoreCompileInputs.cache
 /Users/MateoPanadero/Desktop/UniDi-Usage/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.dll
 /Users/MateoPanadero/Desktop/UniDi-Usage/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.pdb
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/netcoreapp3.1/UniDi-Usage.deps.json
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/netcoreapp3.1/UniDi-Usage.dll
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/netcoreapp3.1/UniDi-Usage.pdb
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.csprojAssemblyReference.cache
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.AssemblyInfoInputs.cache
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.AssemblyInfo.cs
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.csproj.CoreCompileInputs.cache
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.dll
+/Users/MateoPanadero/Repositories/UniDi/UniDi/AssemblyBuild/UniDi-Usage/UniDi-Usage/obj/Debug/netcoreapp3.1/UniDi-Usage.pdb
