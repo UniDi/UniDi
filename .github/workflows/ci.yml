@@ -92,8 +92,8 @@ jobs:
       - name: Upload dll
         uses: actions/upload-artifact@v1
         with:
-          name: UniDi-usage
-          path: AssemblyBuild\UniDi-usage\bin\Debug\
+          name: UniDi-Usage
+          path: AssemblyBuild\UniDi-Usage\bin\Debug\
         
   buildUnity:
     name: Unity test build
