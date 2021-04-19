@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - 'Documentation/**'
-      - '*.md
+      - '*.md'
 
 jobs:
   generateTOC:
