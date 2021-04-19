@@ -65,4 +65,4 @@ TODO
 TODO: Include a section for credits in order to highlight and link to the authors of your project.
 
 ## License
-UniDi contributions are licensed under the Apache 2.0 license, except for contributions copied from Extenject. See [LICENSE](https://github.com/UniDi/UniDi/blob/master/LICENSE) for details.
+UniDi contributions are licensed under the Apache 2.0 license, except for contributions copied from Extenject. See [LICENSE](https://github.com/UniDi/UniDi/blob/master/LICENSE.md) for details.

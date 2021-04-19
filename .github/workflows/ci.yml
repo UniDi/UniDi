@@ -77,7 +77,7 @@ jobs:
           name: Build
           path: build
 
-UniDi-usage:
+  UniDi-usage:
     runs-on: [windows-latest]
     name: UniDi-usage
     steps:
