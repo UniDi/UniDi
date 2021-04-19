@@ -34,7 +34,7 @@
 ExportedObj/
 .consulo/
 *.unityproj
-*.sln
+# *.sln
 *.suo
 *.tmp
 *.user
