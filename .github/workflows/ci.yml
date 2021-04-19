@@ -21,8 +21,6 @@ jobs:
           # - test-project
         unityVersion:
           - 2019.4.1f1
-          - 2020.2.1f1
-          - 2021.1.1f1
         targetPlatform:
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
@@ -77,9 +75,9 @@ jobs:
           name: Build
           path: build
 
-  UniDi-usage:
+  UniDi-Usage:
     runs-on: [windows-latest]
-    name: UniDi-usage
+    name: UniDi-Usage
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -98,9 +96,9 @@ jobs:
           path: AssemblyBuild\UniDi-usage\bin\Debug\
         
   buildUnity:
-    name: Unity test
+    name: Unity test build
     runs-on: ubuntu-latest
-    needs: UniDi-usage
+    needs: UniDi-Usage
     env:
       UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
     steps:
@@ -111,13 +109,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Download UniDi-usage
+      - name: Download UniDi-Usage
         uses: actions/download-artifact@v1
         with:
-          name: UniDi-usage
+          name: UniDi-Usage
 
-      - name: Install UniDi-usage
+      - name: Install UniDi-Usage
         run: |
-          ls -l UniDi-usage
-          cp UniDi-usage/UniDi-usage.dll UnityProject/Assets/Plugins/UniDi/Source/Usage
+          ls -l UniDi-Usage
+          cp Usage/UniDi-Usage.dll UnityProject/Packages/UniDi/Source/Usage
+          #cp UniDi-Usage/UniDi-Usage.dll UnityProject/Assets/Plugins/UniDi/Source/Usage
           ls -l UnityProject/Assets/Plugins/UniDi/Source/Usage
