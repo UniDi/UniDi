@@ -86,7 +86,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1
         
       - name: MSBuild
-        working-directory: AssemblyBuild\UniDi-usage
+        working-directory: AssemblyBuild\UniDi-Usage
         run: msbuild UniDi-Usage.sln
         
       - name: Upload dll
