@@ -87,7 +87,7 @@ jobs:
         
       - name: MSBuild
         working-directory: AssemblyBuild\UniDi-usage
-        run: msbuild UniDi-usage.sln
+        run: msbuild UniDi-Usage.sln
         
       - name: Upload dll
         uses: actions/upload-artifact@v1
