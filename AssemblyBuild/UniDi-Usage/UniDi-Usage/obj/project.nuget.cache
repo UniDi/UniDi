@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "geyi+xr81BGyLv7X5dqCrrMxA1GearzIPwORLKab/tzCQSt+s554ZzdEvsMx7ev9JWqZrnrEcqKN2NQ4z5n3Sw==",
+  "success": true,
+  "projectFilePath": "/Users/MateoPanadero/Desktop/UniDi-Usage/UniDi-Usage/UniDi-Usage/UniDi-Usage.csproj",
+  "expectedPackageFiles": [
+    "/Users/MateoPanadero/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.8/microsoft.aspnetcore.app.ref.3.1.8.nupkg.sha512"
+  ],
+  "logs": []
+}
