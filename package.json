@@ -16,5 +16,6 @@
     "name": "UniDi Community",
     "email": "mathijs.unityassets@gmail.com",
     "url": "https://github.com/UniDi"
-  }
+  },
+  "type": "library"
 }
