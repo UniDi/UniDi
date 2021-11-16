@@ -95,37 +95,37 @@ TODO: --> WIP <--
 ## Usage 
 
 ### Injection
-are also several ways of having these dependencies injected into your classes. These are:
+UniDi automates the injection of dependencies into your classes. 
 
 #### Constructor Injection
-```
-public class Foo
+```csharp
+public class Mage
 {
-    IBar _bar;
+    ISpell _spell;
 
-    public Foo(IBar bar)
+    public Mage(ISpell spell)
     {
-        _bar = bar;
+        _spell = spell;
     }
 }
 ```
 
 #### Field Injection
-```
-public class Foo
+```csharp
+public class Mage
 {
     [Inject]
-    IBar _bar;
+    ISpell _spell;
 }
 ```
 Field injection occurs immediately after the constructor is called. All fields that are marked with the [Inject] attribute are looked up in the container and given a value. Note that these fields can be private or public and injection will still occur.
 
 #### Property Injection
-```
-public class Foo
+```csharp
+public class Mage
 {
     [Inject]
-    public IBar Bar
+    public ISpell Spell
     {
         get;
         private set;
@@ -135,17 +135,17 @@ public class Foo
 Property injection works the same as field injection except is applied to C# properties. Just like fields, the setter can be private or public in this case.
 
 #### Method Injection
-```
-public class Foo
+```csharp
+public class Mage
 {
-    IBar _bar;
-    Qux _qux;
+    ISpell _spell;
+    IMana _mana;
 
     [Inject]
-    public void Init(IBar bar, Qux qux)
+    public void Init(ISpell spell, IMana mana)
     {
-        _bar = bar;
-        _qux = qux;
+        _spell = spell;
+        _mana = mana;
     }
 }
 ```
