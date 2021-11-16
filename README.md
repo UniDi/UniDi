@@ -25,7 +25,22 @@ A DI Container is a software library that provides DI functionality and automate
 
 ## Installation
 
-### Install via Git URL
+### Install with Unity Package Manager
+Open the Package Manager (UPM) in Unity ``Windows -> Package Manager``.
+
+Select ``+`` in the top-left of the UPM panel and select ``Add package from Git URL...``
+
+Enter ``https://github.com/UniDi/UniDi.git`` in the text box and click add.
+
+More info: [Unity Manual: Installing from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html).
+
+| Syntax: | URL example |
+| Latest default branch	| "https://github.com/UniDi/UniDi.git" |
+| Specific branch| "https://github.com/UniDi/UniDi.git/#branch-name" |  
+| Specific version (tag) | "https://github.com/UniDi/UniDi.git#v.0.0.1" |
+| Commit hash |	"https://github.example.com/myuser/myrepository.git#9e72f9d5a6a3dadc38d813d8399e1b0e86781a49" |
+
+### Git URL Manual Installation
 Open ``Packages/manifest.json`` with your favorite text editor. Add the following line to the dependencies block.
 ```json
 {
@@ -49,6 +64,8 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
   }
 }
 ```
+TODO: [Unity Manual about ](https://docs.unity3d.com/Manual/upm-git.html)
+
 ### Install from file 
 Download and extract a [release](https://github.com/UniDi/UniDi/releases) to your machine. Press 'Add package from disk' in the Unity Package Manager and select the ``package.json`` file in the extracted folder.
 
