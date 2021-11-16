@@ -34,7 +34,17 @@ A DI Container is a software library that provides DI functionality and automate
 
 ## Installation
 
-### Install with Unity Package Manager
+You can choose posibilities to install UniDi into your Unity project:
+1. [Unity Package Manger](#unity-package-manager)
+Probably the easiest way. Just add the git URL and let the package manager install it for you.
+1. [Manual Installation](#manual-installation)
+Edit the project manifest file by hand.
+1. [Instal from a File](#Install-from-file)
+Download a tarball and install it as a package.
+1. [OpenUPM](#openupm) 
+OpenUPM is currently not yet supported.
+
+### Unity Package Manager
 Open the Package Manager (UPM) in Unity ``Windows -> Package Manager``.
 
 Select ``+`` in the top-left of the UPM panel and select ``Add package from Git URL...``
@@ -50,7 +60,7 @@ More info: [Unity Manual: Installing from a Git URL](https://docs.unity3d.com/Ma
 | Specific version (tag) | "https://github.com/UniDi/UniDi.git#v.0.0.1" |
 | Commit hash |	"https://github.com//UniDi/UniDi.git#9e72f9d5a6a3da49..." |
 
-### Git URL Manual Installation
+### Manual Installation
 Open ``Packages/manifest.json`` with your favorite text editor. Add the following line to the dependencies block.
 ```json
 {
@@ -63,6 +73,8 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
 **Notice:** Unity Package Manager records the current commit to a lock entry of the manifest.json. To update to the latest version, change the ``"hash"`` value manually or just remove the lock entry to resolve the package.
 ```json
 {
+  {
+    {
       "version": "https://github.com/unidi/unidi.git",
       "depth": 0,
       "source": "git",
@@ -81,10 +93,94 @@ Download and extract a [release](https://github.com/UniDi/UniDi/releases) to you
 TODO: --> WIP <--
 
 ## Usage 
-TODO
+
+### Injection
+are also several ways of having these dependencies injected into your classes. These are:
+
+#### Constructor Injection
+```
+public class Foo
+{
+    IBar _bar;
+
+    public Foo(IBar bar)
+    {
+        _bar = bar;
+    }
+}
+```
+
+#### Field Injection
+```
+public class Foo
+{
+    [Inject]
+    IBar _bar;
+}
+```
+Field injection occurs immediately after the constructor is called. All fields that are marked with the [Inject] attribute are looked up in the container and given a value. Note that these fields can be private or public and injection will still occur.
+
+#### Property Injection
+```
+public class Foo
+{
+    [Inject]
+    public IBar Bar
+    {
+        get;
+        private set;
+    }
+}
+```
+Property injection works the same as field injection except is applied to C# properties. Just like fields, the setter can be private or public in this case.
+
+#### Method Injection
+```
+public class Foo
+{
+    IBar _bar;
+    Qux _qux;
+
+    [Inject]
+    public void Init(IBar bar, Qux qux)
+    {
+        _bar = bar;
+        _qux = qux;
+    }
+}
+```
+Method Inject injection works very similarly to constructor injection.
+
+### Code example: Hello, World!
+
+This code example logs a 'Hello, World!' in the console.
+
+```
+using UniDi;
+using UnityEngine;
+
+public class TestInstaller : MonoInstaller
+{
+    public override void InstallBindings()
+    {
+        Container.Bind<string>().FromInstance("Hello, World!");
+        Container.Bind<Greeter>().AsSingle().NonLazy();
+    }
+}
+
+public class Greeter
+{
+    public Greeter(string message)
+    {
+        Debug.Log(message);
+    }
+}
+```
+If you want to follow all the steps of this example, you can consult the docs TODO:[here]()
 
 ## Contributing
-TODO
+Contributing is welcome! Create a *draft* or *PR*.
+[Contributing guidelines](https://github.com/UniDi/UniDi/CONTRIBUTING.md)
 
 ## Credits
 TODO: Include a section for credits in order to highlight and link to the authors of your project.
