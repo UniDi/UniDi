@@ -25,18 +25,18 @@ The following is a set of guidelines for contributing to UniDi and its extension
 </details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## How Can I Contribute?
+# You can contribute by:
 
-### :microscope: Testing
+## :traffic_light: Testing
 
 We have a handful of unit tests, but most of our testbed consists of running it with existing projects. 
 Try our builds and pull requests in your own projects and communicate how it goes.
 
-### :beetle: Reporting Bugs
+## :beetle: Reporting
 
 Before creating bug reports, please check the existing bug reports as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible.
 
-#### How Do I Submit A (Good) Bug Report?
+### How Do I Submit A (Good) Bug Report?
 
 [Create an issue](https://github.com/UniDi/UniDi/issues/new?template=bug_report.md) on the project's repository and provide the following information.
 
@@ -62,13 +62,13 @@ Include details about your configuration and environment:
 * **What's the name and version of the OS you're using**?
 * **Any other information that could be useful about you environment**
 
-### Suggesting Enhancements / Feature Requests
+## :muscle: Suggesting Enhancements / Feature Requests
 
 This section guides you through submitting an enhancement suggestion for this project, including completely new features and minor improvements to existing functionality. Following these guidelines helps maintainers and the community understand your suggestion and find related suggestions.
 
 Before creating enhancement suggestions, please check the list of enhancements suggestions in the issue tracker as you might find out that you don't need to create one. When you are creating an enhancement suggestion, please include as many details as possible.
 
-#### How Do I Submit A (Good) Enhancement Suggestion?
+### How Do I Submit A (Good) Enhancement Suggestion?
 
 [Create an issue](https://github.com/UniDi/UniDi/issues/new?template=feature_request.md) on the project's repository and provide the following information:
 
@@ -82,9 +82,9 @@ Before creating enhancement suggestions, please check the list of enhancements s
 * **Provide a specific use case** - Often we get requests for a feature not realizing there is already a way to fulfill their use case. In other words, don't just give us a solution, give us a problem.
 
 
-### Creating Pull Requests
+## :arrow_heading_up: Creating Pull Requests
 
-#### How Do I Submit A (Good) Pull Request?
+### How Do I Submit A (Good) Pull Request?
 
 Please send a [GitHub Pull Request](https://github.com/UniDi/UniDi/compare) with a clear list of what you've done (read more about [pull requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests)). 
 When you send a pull request, we will love you forever if you include unit tests. 
@@ -113,7 +113,7 @@ Submit your pull requests to the right branch:
   
 If your pull request breaks any test, it has no hope of being merged.
 
-## Coding Conventions
+## :white_check_mark: Coding Conventions
 
 Start reading our code and you'll get the hang of it. We optimize for readability:
 
