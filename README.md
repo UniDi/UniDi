@@ -1,5 +1,13 @@
 # UniDi
-UniDi is a Dependency Injection container for Unity based on Zenject.
+[Documentation](https://github.com/UniDi/unidi.github.io)
+
+UniDi is a Dependency Injection container for Unity and a continuation of [Zenject/Extenject](https://github.com/Mathijs-Bakker/Extenject).
+The UniDi is a project that seeks to refactor Zenject in order to:
+
+* Simplify maintenance
+* Encourage [contributions]()
+* Split the work between multiple developers
+* Maximize extensibility
 
 ## Table Of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
@@ -55,8 +63,6 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
 **Notice:** Unity Package Manager records the current commit to a lock entry of the manifest.json. To update to the latest version, change the ``"hash"`` value manually or just remove the lock entry to resolve the package.
 ```json
 {
-  "dependencies": {
-    "com.unidi.unidi": {
       "version": "https://github.com/unidi/unidi.git",
       "depth": 0,
       "source": "git",
