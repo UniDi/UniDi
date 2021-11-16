@@ -11,12 +11,15 @@ The following is a set of guidelines for contributing to UniDi and its extension
 <details>
 <summary>Details</summary>
 
-- [How Can I Contribute?](#how-can-i-contribute)
-  - [:microscope: Testing](#microscope-testing)
-  - [:beetle: Reporting Bugs](#beetle-reporting-bugs)
-  - [Suggesting Enhancements / Feature Requests](#suggesting-enhancements--feature-requests)
-  - [Creating Pull Requests](#creating-pull-requests)
-- [Coding Conventions](#coding-conventions)
+- [You can contribute by:](#you-can-contribute-by)
+  - [:traffic_light: Testing](#traffic_light-testing)
+  - [:beetle: Reporting](#beetle-reporting)
+    - [How Do I Submit A (Good) Bug Report?](#how-do-i-submit-a-good-bug-report)
+  - [:muscle: Suggesting Enhancements / Feature Requests](#muscle-suggesting-enhancements--feature-requests)
+    - [How Do I Submit A (Good) Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
+  - [:arrow_heading_up: Creating Pull Requests](#arrow_heading_up-creating-pull-requests)
+    - [How Do I Submit A (Good) Pull Request?](#how-do-i-submit-a-good-pull-request)
+  - [:white_check_mark: Coding Conventions](#white_check_mark-coding-conventions)
 
 </details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
