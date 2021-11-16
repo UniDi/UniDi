@@ -35,8 +35,8 @@ Enter ``https://github.com/UniDi/UniDi.git`` in the text box and click add.
 
 More info: [Unity Manual: Installing from a Git URL](https://docs.unity3d.com/Manual/upm-ui-giturl.html).
 
-|---|---|
 | Syntax: | URL example |  
+|---|---|
 | Latest default branch	| "https://github.com/UniDi/UniDi.git" |  
 | Specific branch| "https://github.com/UniDi/UniDi.git/#branch-name" |
 | Specific version (tag) | "https://github.com/UniDi/UniDi.git#v.0.0.1" |
