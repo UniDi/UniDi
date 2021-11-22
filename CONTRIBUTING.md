@@ -80,7 +80,6 @@ Before creating enhancement suggestions, please check the list of enhancements s
 * **Specify the current environment you're using.** if this is a useful information.
 * **Provide a specific use case** - Often we get requests for a feature not realizing there is already a way to fulfill their use case. In other words, don't just give us a solution, give us a problem.
 
-
 ## :arrow_heading_up: Creating Pull Requests
 
 ### How Do I Submit A (Good) Pull Request?

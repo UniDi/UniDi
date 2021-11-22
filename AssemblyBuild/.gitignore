@@ -1,2 +1,4 @@
-*.meta
-/[Oo]bj/
+[Bb]in
+bin.meta
+[Oo]bj
+obj.meta

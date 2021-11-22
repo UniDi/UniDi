@@ -49,7 +49,7 @@ ExportedObj/
 
 # Unity3D generated meta files
 *.pidb.meta
-*.pdb.meta
+*pdb.meta
 *.mdb.meta
 
 # Unity3D generated file on crash reports
