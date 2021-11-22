@@ -20,12 +20,10 @@ The UniDi is a project that seeks to refactor Zenject in order to:
   - [Unity Package Manager](#unity-package-manager)
   - [Manual Installation](#manual-installation)
   - [Install from file](#install-from-file)
-  - [OpenUPM](#openupm)
 - [Usage](#usage)
   - [Injection](#injection)
   - [Code example: Hello, World!](#code-example-hello-world)
 - [Contributing](#contributing)
-- [Credits](#credits)
 - [License](#license)
 
 </details>
