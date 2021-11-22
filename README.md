@@ -85,7 +85,7 @@ Open ``Packages/manifest.json`` with your favorite text editor. Add the followin
 TODO: [Unity Manual about ](https://docs.unity3d.com/Manual/upm-git.html)
 
 ### Install from file 
-Download and extract a [release](https://github.com/UniDi/UniDi/releases) to your machine. Press 'Add package from disk' in the Unity Package Manager and select the ``package.json`` file in the extracted folder.
+Download and extract a [release](https://github.com/UniDi/UniDi/releases) to your machine. Press 'Add package from disk...' in the Unity Package Manager and select the ``package.json`` file in the extracted folder.
 
 ## Usage 
 
