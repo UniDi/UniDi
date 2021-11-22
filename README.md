@@ -172,7 +172,7 @@ If you want to follow all the steps of this example, you can consult the docs TO
 
 ## Contributing
 Contributing is welcome! Create a *draft* when you are still working on your contribution (and don't want to have it merged) or a *PR* to be reviewed.
-[Contributing guidelines](https://github.com/UniDi/UniDi/CONTRIBUTING.md)
+[Contributing guidelines](https://github.com/UniDi/UniDi/blob/master/CONTRIBUTING.md)
 
 ## License
 UniDi contributions are licensed under the Apache 2.0 license, except for contributions copied from Extenject. See [LICENSE](https://github.com/UniDi/UniDi/blob/master/LICENSE.md) for details.
