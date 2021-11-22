@@ -1,9 +1,8 @@
+# Contribute to the UniDi project
 
-# Contributing to UniDi
+*Thank you for considering to contribute to UniDi.**
 
-:+1::tada: **First off, thank you for considering to contribute to UniDi.** :tada::+1:
-
-The following is a set of guidelines for contributing to UniDi and its packages, which are hosted in [UniDi](https://github.com/UniDi/) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to UniDi and its extensions, which are hosted in [UniDi](https://github.com/UniDi/UniDi) on GitHub. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 ## Table of Contents
 
@@ -12,40 +11,27 @@ The following is a set of guidelines for contributing to UniDi and its packages,
 <details>
 <summary>Details</summary>
 
-- [I don't want to read this whole thing I just have a question!!](#i-dont-want-to-read-this-whole-thing-i-just-have-a-question)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [:microscope: Testing](#microscope-testing)
-- [:beetle: Reporting Bugs](#beetle-reporting-bugs)
-  - [How Do I Submit A (Good) Bug Report?](#how-do-i-submit-a-good-bug-report)
-- [:muscle: Suggesting Enhancements / Feature Requests](#muscle-suggesting-enhancements--feature-requests)
-  - [How Do I Submit A (Good) Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
-- [:repeat: Creating Pull Requests](#repeat-creating-pull-requests)
-  - [How Do I Submit A (Good) Pull Request?](#how-do-i-submit-a-good-pull-request)
-- [:white_check_mark: Coding Conventions](#white_check_mark-coding-conventions)
+- [You can contribute by:](#you-can-contribute-by)
+  - [:traffic_light: Testing](#traffic_light-testing)
+  - [:beetle: Reporting](#beetle-reporting)
+    - [How Do I Submit A (Good) Bug Report?](#how-do-i-submit-a-good-bug-report)
+  - [:muscle: Suggesting Enhancements / Feature Requests](#muscle-suggesting-enhancements--feature-requests)
+    - [How Do I Submit A (Good) Enhancement Suggestion?](#how-do-i-submit-a-good-enhancement-suggestion)
+  - [:arrow_heading_up: Creating Pull Requests](#arrow_heading_up-creating-pull-requests)
+    - [How Do I Submit A (Good) Pull Request?](#how-do-i-submit-a-good-pull-request)
+  - [:white_check_mark: Coding Conventions](#white_check_mark-coding-conventions)
 
 </details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## I don't want to read this whole thing I just have a question!!
+# You can contribute by:
 
-> **Note:** Please don't file an issue to ask a question. You'll get faster results by using the resources below.
-
-:rocket: **Chat (recommended):**
-* [UniDi community on Slack](unidi.slack.com) (Official)
-* [Infallible Code's Discord](https://discord.gg/T5y5TD) (has a dedicated #UniDi-Extenject-Zenject channel)
-
-:snail: **Websites/forums:**
-* [StackOverflow](https://stackoverflow.com/questions/tagged/unidi)
-* [Unity Forums](https://forum.unity.com)
-
-## How Can I Contribute?
-
-## :microscope: Testing
+## :traffic_light: Testing
 
 We have a handful of unit tests, but most of our testbed consists of running it with existing projects. 
 Try our builds and pull requests in your own projects and communicate how it goes.
 
-## :beetle: Reporting Bugs
+## :beetle: Reporting
 
 Before creating bug reports, please check the existing bug reports as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible.
 
@@ -94,8 +80,7 @@ Before creating enhancement suggestions, please check the list of enhancements s
 * **Specify the current environment you're using.** if this is a useful information.
 * **Provide a specific use case** - Often we get requests for a feature not realizing there is already a way to fulfill their use case. In other words, don't just give us a solution, give us a problem.
 
-
-## :repeat: Creating Pull Requests
+## :arrow_heading_up: Creating Pull Requests
 
 ### How Do I Submit A (Good) Pull Request?
 
