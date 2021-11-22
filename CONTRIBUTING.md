@@ -8,7 +8,7 @@ The following is a set of guidelines for contributing to UniDi and its extension
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-Details
+#Table Of Contents
 
 - [You can contribute by:](#you-can-contribute-by)
   - [:traffic_light: Testing](#traffic_light-testing)
