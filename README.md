@@ -43,8 +43,6 @@ Probably the easiest way. Just add the git URL and let the package manager insta
 Edit the project manifest file by hand.
 1. [Instal from a File](#Install-from-file)
 Download a tarball and install it as a package.
-1. [OpenUPM](#openupm) 
-OpenUPM is currently not yet supported.
 
 ### Unity Package Manager
 Open the Package Manager (UPM) in Unity ``Windows -> Package Manager``.
@@ -90,9 +88,6 @@ TODO: [Unity Manual about ](https://docs.unity3d.com/Manual/upm-git.html)
 
 ### Install from file 
 Download and extract a [release](https://github.com/UniDi/UniDi/releases) to your machine. Press 'Add package from disk' in the Unity Package Manager and select the ``package.json`` file in the extracted folder.
-
-### OpenUPM
-TODO: --> WIP <--
 
 ## Usage 
 
@@ -183,9 +178,6 @@ If you want to follow all the steps of this example, you can consult the docs TO
 ## Contributing
 Contributing is welcome! Create a *draft* or *PR*.
 [Contributing guidelines](https://github.com/UniDi/UniDi/CONTRIBUTING.md)
-
-## Credits
-TODO: Include a section for credits in order to highlight and link to the authors of your project.
 
 ## License
 UniDi contributions are licensed under the Apache 2.0 license, except for contributions copied from Extenject. See [LICENSE](https://github.com/UniDi/UniDi/blob/master/LICENSE.md) for details.
