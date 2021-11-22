@@ -14,6 +14,6 @@ jobs:
       - uses: technote-space/toc-generator@v2
         with:
           TARGET_PATHS: README.md, CONTRIBUTING.md, Documentation/*.md
-          FOLDING: true
+          FOLDING: false
           MAX_HEADER_LEVEL: 3
           TOC_TITLE: 'Details'
