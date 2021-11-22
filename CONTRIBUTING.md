@@ -8,8 +8,7 @@ The following is a set of guidelines for contributing to UniDi and its extension
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<details>
-<summary>Details</summary>
+Details
 
 - [You can contribute by:](#you-can-contribute-by)
   - [:traffic_light: Testing](#traffic_light-testing)
@@ -21,7 +20,6 @@ The following is a set of guidelines for contributing to UniDi and its extension
     - [How Do I Submit A (Good) Pull Request?](#how-do-i-submit-a-good-pull-request)
   - [:white_check_mark: Coding Conventions](#white_check_mark-coding-conventions)
 
-</details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # You can contribute by:

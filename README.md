@@ -12,8 +12,7 @@ The UniDi is a project that seeks to refactor Zenject in order to:
 ## Table Of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<details>
-<summary>Details</summary>
+Details
 
 - [What is a DI container?](#what-is-a-di-container)
 - [Installation](#installation)
@@ -26,7 +25,6 @@ The UniDi is a project that seeks to refactor Zenject in order to:
 - [Contributing](#contributing)
 - [License](#license)
 
-</details>
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## What is a DI container?
