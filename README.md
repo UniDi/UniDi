@@ -9,7 +9,6 @@ The UniDi is a project that seeks to refactor Zenject in order to:
 * Split the work between multiple developers
 * Maximize extensibility
 
-## Table Of Contents
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 Details
