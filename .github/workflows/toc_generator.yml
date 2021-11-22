@@ -16,4 +16,4 @@ jobs:
           TARGET_PATHS: README.md, CONTRIBUTING.md, Documentation/*.md
           FOLDING: false
           MAX_HEADER_LEVEL: 3
-          TOC_TITLE: '#Table Of Contents'
+          TOC_TITLE: '## Table Of Contents'
