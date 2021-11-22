@@ -152,7 +152,7 @@ Method Inject injection works very similarly to constructor injection.
 
 This code example logs a 'Hello, World!' in the console.
 
-```
+```csharp
 using UniDi;
 using UnityEngine;
 
