@@ -1,5 +1,5 @@
 # UniDi
-[Documentation](https://github.com/UniDi/unidi.github.io)
+[![CI](https://github.com/UniDi/UniDi/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/UniDi/UniDi/actions/workflows/ci.yml) [Documentation](https://github.com/UniDi/unidi.github.io)
 
 UniDi is a Dependency Injection container for Unity and a continuation of [Zenject/Extenject](https://github.com/Mathijs-Bakker/Extenject).
 The UniDi is a project that seeks to refactor Zenject in order to:
