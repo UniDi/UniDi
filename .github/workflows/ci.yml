@@ -1,0 +1,112 @@
+name: CI 
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  buildAndTestForSupportedPlatforms:
+
+    name: Build for ${{ matrix.targetPlatform }} on version ${{ matrix.unityVersion }}
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        projectPath:
+          - UnityProject
+        assetsPath:
+          - Assets/UniDi
+        unityVersion:
+          - 2019.4.1f1
+        targetPlatform:
+          - Android # Build a Android standalone.
+          - StandaloneLinux64 # Build a Linux 64-bit standalone.
+          - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
+          - StandaloneWindows64 # Build a Windows 64-bit standalone.
+          - WebGL # WebGL.
+          - iOS # Build an iOS player.
+          # Not supported platforms by GitHub actions:
+          # - Windows Store # Build a standalone for Windows Store devices.
+          # - PS4 # Build a Playstation 4 standalone.
+        testMode:
+          # - playmode
+          - editmode
+
+    steps:
+
+      # Need to be rootless to have write access for checkout and clone repo
+      - name: Use container in rootless mode
+        uses: ScribeMD/rootless-docker@0.1.1
+
+      # Checkout
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      # Create Empty Unity project
+      - name: Create Unity Project
+        uses: jbltx/unity-create@v1.1
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          unityVersion: ${{ matrix.unityVersion }}
+          projectPath: ${{ matrix.projectPath }}
+
+      # Checkout and clone UniDi into Assets 
+      # There's no need to do complicated stuff like managing the project manifest
+      # We just clone to the Assets folder as tests will run from here.
+      # If there's another way in the future (like automating the process with a cmd for
+      # Unity's Package Manager) then that would be cool to implement in the Ci workflow.
+      - name: Checkout and Clone Repository
+        uses: actions/checkout@v2
+        with:
+          repository: UniDi/UniDi
+          path: ${{ matrix.projectPath }}/${{ matrix.assetsPath }}
+
+      # Cache
+      - name: Caching Unity Project Library
+        uses: actions/cache@v2
+        with:
+          path: ${{ matrix.projectPath }}/Library
+          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}-${{ hashFiles(matrix.projectPath) }}
+          restore-keys: |
+            Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}-
+            Library-${{ matrix.projectPath }}-
+            Library-
+
+      # Test Runner
+      - name: Run Tests
+        uses: game-ci/unity-test-runner@v2
+        id: testRunner
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          testMode: ${{ matrix.testMode }}
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: ${{ matrix.unityVersion }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          checkName: ${{ matrix.testMode }} Test Results
+
+      # Upload Test Artifacts
+      - name: Upload Test Results Artifacts
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: Test results for ${{ matrix.testMode }}
+          path: ${{ steps.testRunner.outputs.artifactsPath }}
+
+      # Build
+      - name: Build 
+        uses: game-ci/unity-builder@v2
+        env:
+          UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
+        with:
+          projectPath: ${{ matrix.projectPath }}
+          unityVersion: ${{ matrix.unityVersion }}
+          targetPlatform: ${{ matrix.targetPlatform }}
+          # Allow Dirty Build as the semantic version is doing unsuspecting things
+          # this could be something to look further into
+          allowDirtyBuild: true
