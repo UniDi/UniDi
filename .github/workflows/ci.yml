@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - master
+    paths-ignore:
+    - '*.md'
+      
 jobs:
   buildAndTestForSupportedPlatforms:
 
@@ -22,11 +25,11 @@ jobs:
           - 2019.4.1f1
         targetPlatform:
           - Android # Build a Android standalone.
+          - iOS # Build an iOS player.
           - StandaloneLinux64 # Build a Linux 64-bit standalone.
           - StandaloneOSX # Build a macOS standalone (Intel 64-bit).
           - StandaloneWindows64 # Build a Windows 64-bit standalone.
           - WebGL # WebGL.
-          - iOS # Build an iOS player.
           # Not supported platforms by GitHub actions:
           # - Windows Store # Build a standalone for Windows Store devices.
           # - PS4 # Build a Playstation 4 standalone.
