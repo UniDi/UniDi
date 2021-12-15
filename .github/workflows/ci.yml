@@ -140,7 +140,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: UniDi-Usage
-        path: AssemblyBuild\UniDi-Usage\bin\Debug\
+        path: AssemblyBuild/UniDi-Usage/bin/Debug/
 
     - name: Checkout repository
       uses: actions/checkout@v2
