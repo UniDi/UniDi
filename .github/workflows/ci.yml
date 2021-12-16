@@ -141,6 +141,14 @@ jobs:
       with:
         name: UniDi-Usage
         path: AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/
+        
+  deployBuild:
+  
+    runs-on: ubuntu-latest
+    
+    name: Deploy Build UniDi-Usage
+    
+    steps:
 
     - name: Checkout repository
       uses: actions/checkout@v2
