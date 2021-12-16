@@ -139,8 +139,8 @@ jobs:
     - name: Upload dll
       uses: actions/upload-artifact@v1
       with:
-        name: UniDi-Usage.dll
-        path: AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/netcoreapp3.1/
+        name: UniDi-Usage
+        path: AssemblyBuild/UniDi-Usage/UniDi-Usage/bin/Debug/netcoreapp3.1/UniDi-Usage.dll
         
   deployBuild:
   
