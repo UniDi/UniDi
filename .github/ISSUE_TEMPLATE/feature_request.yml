@@ -1,0 +1,21 @@
+name: Feature request
+description: Request an enhancement for UniDi
+labels: [enhancement]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Before requesting: search [existing issues](https://github.com/UniDi/UniDi/labels/enhancement).
+
+  - type: input
+    attributes:
+      label: "Feature already in UniDi?"
+      description: "Does the feature already exist in UniDi or other? If possible, specify which version (or commit) that introduced it."
+      placeholder: "Yes, UniDi 0.0.1"
+
+  - type: textarea
+    attributes:
+      label: "Feature description"
+    validations:
+      required: true
