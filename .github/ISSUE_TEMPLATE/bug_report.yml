@@ -1,0 +1,59 @@
+name: Bug Report
+description: Report a problem in UniDi
+labels: [bug]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        _Before reporting:_ search [existing issues](https://github.com/UniDi/UniDi/issues?q=is%3Aissue+is%3Aopen+label%3Abug).
+
+  - type: input
+    attributes:
+      label: "UniDi version"
+      placeholder: "0.0.1 commit db1b0ee3b30f"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Operating system/version"
+      placeholder: "macOS 11.5"
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "Unity version"
+      placeholder: "Unity 2019.4.0f1"
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: "Installation"
+      description: "How did you install UniDi: (Vanilla) Unity Package Manager, Manual, OpenUPM?.."
+      placeholder: "Manual installation with the following lines added to the projects manifest.json file."
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "How to reproduce the issue"
+      description: |
+        - Steps to reproduce.
+      placeholder: |
+        - When using the following code, Unity throws an UniDi exception
+        - ...
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: "Expected behavior"
+      description: "Describe the behavior you expect. May include logs, images, or videos."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "Actual behavior"
+    validations:
+      required: true
