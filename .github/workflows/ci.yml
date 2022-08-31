@@ -43,7 +43,7 @@ jobs:
 
       # Need to be rootless to have write access for checkout and clone repo
       - name: Use container in rootless mode
-        uses: ScribeMD/rootless-docker@0.1.1
+        uses: ScribeMD/rootless-docker@0.1.7
 
       # Checkout
       - name: Checkout repository
