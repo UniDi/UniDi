@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8620c058a9173b84a97d72ed5e94dbd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 889683010a6114d6fa73452f80dc8037, type: 3}
   m_Name: ZenjectDefaultSceneContractConfig
   m_EditorClassIdentifier: 
   DefaultContracts:
