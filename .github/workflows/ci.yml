@@ -158,7 +158,7 @@ jobs:
         fetch-depth: 0
 
     - name: Download UniDi-Usage
-      uses: actions/download-artifact@v1
+      uses: actions/download-artifact@v4.1.7
       with:
         name: UniDi-Usage
 
